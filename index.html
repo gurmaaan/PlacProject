@@ -47,13 +47,13 @@
 	<table class="table">
 	  <tbody>
 		<tr>
-		  <th scope="row">1</th>
+		  <th scope="row"></th>
 		  <td>Описание</td>
 		  <td>Автор</td>
 		  <td>Дата</td>
 		</tr>
 		<tr>
-		  <th scope="row">2</th>
+		  <th scope="row"></th>
 		  <td>Усовершенствованный плац Военной Кафедры НИЯУ МИФИ</td>
 		  <td>ВК НИЯУ МИФИ</td>
 		  <td>08.05.2018</td>
@@ -62,11 +62,23 @@
 	</table>
 <!-- ---- -->
 		
+<!--Обзор 360 -->
+	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+	  <div class="carousel-inner">
+		<div class="carousel-item active">
+		  <img class="d-block w-100" src="img/360view.png" alt="First slide">
+		</div>
+	  </div>
+	</div>
+<!-- ---- -->
+		
 <!--Slider 1-->
 	<ol>
 		<li>Выход из строя и возвращение в строй</li>
 		<li>Строй и его элементы</li>
 		<li>Выполнение воинского приветствия</li>
+		
+		
 	</ol>		
 <!-- ---- -->
 
@@ -87,4 +99,15 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<!-- ---- -->
 	</body>
+	<script>
+		var i =0;
+		юоод
+		setInterval(Tick,1000/30)
+		
+		function Tick(){
+			//var i = parseInt(document.getElementById("scroll").style.backgroundPositionX.value);
+			document.getElementById("scroll").style.backgroundPosition=i+"% 0%";
+			i+=.1
+		}
+	</script>
 </html>
