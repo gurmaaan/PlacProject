@@ -33,9 +33,6 @@
 	   </button>
 	   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 		  <div class="navbar-nav">
-			 <a class="nav-item nav-link active" href="#">Вверх 
-			 	<span class="sr-only">(current)</span>
-			 </a>
 			 <a class="nav-item nav-link" href="#view">Обзор</a>
 			 <a class="nav-item nav-link" href="#pictures">Проекты плакатов</a>
 		  </div>
@@ -44,7 +41,7 @@
 	<!-- ---- -->
 		
 <!--Header-->
-	<h1><Плац Военной Кафедры НИЯУ МИФИ</h1>
+	<h1>    Плац Военной Кафедры НИЯУ МИФИ</h1>
 	
 	<table class="table">
 	  <tbody>
@@ -65,22 +62,16 @@
 <!-- ---- -->
 		
 <!--Обзор 360 -->
-	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-	  <div class="carousel-inner">
-		<div class="carousel-item active">
-		  <img class="d-block w-100" src="img/360view.png" alt="First slide">
-		</div>
-	  </div>
-	</div>
+    <img src="img/360view.png" width="1024" height="760" id="view"
+         class="reel"
+         data-images="img/360view.png">
 <!-- ---- -->
 		
 <!--Slider 1-->
-	<ol>
+	<ol id="pictures">
 		<li>Выход из строя и возвращение в строй</li>
 		<li>Строй и его элементы</li>
 		<li>Выполнение воинского приветствия</li>
-		
-		
 	</ol>		
 <!-- ---- -->
 
@@ -100,16 +91,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<!-- ---- -->
+        <!--Other scripts-->
+        <script src="http://code.vostrel.net/jquery.reel-bundle.js"></script>
 	</body>
-	<script>
-		let i =0;
-		setInterval(Tick,1000/30);
-		
-		function Tick()
-        {
-			//var i = parseInt(document.getElementById("scroll").style.backgroundPositionX.value);
-			document.getElementById("scroll").style.backgroundPosition=i+"% 0%";
-			i+=.1
-		}
-	</script>
 </html>
